@@ -1,1 +1,17 @@
 curl --request GET http://127.0.0.1:5000/
+
+curl --request GET http://127.0.0.1:5000/lessons/get-all-lessons
+
+curl --request POST http://127.0.0.1:5000//lessons/add-lessons-json
+--header "Content-Type:application/json" \
+--data
+'{
+    "lesson_session": "Spring",
+    "lesson_code": "SWE7605",
+    "lesson_title": "Advanced Python Programming",
+    "lesson_department": "MSc.SoftwareEngineering",
+    "lesson_tutor": "Kelly Donald",
+    "lesson_program_leader": "Francis Morrissey",
+    "lesson_venue": "George Bush Lab",
+    "lesson_time": "Monday 4:00 - 7:00"
+}'
